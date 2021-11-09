@@ -38,6 +38,7 @@ describe('Login And Applications Page', () => {
         // výpis přihlášených kurzů
         const rows = $('.dataTable').$('tbody').$$('tr')
         console.log('There are ' + rows.length + ' rows in the table');
+        
         rows.forEach(row => {
             console.log(row.getText());
         })
